@@ -1,14 +1,14 @@
 package com.learning.pet.clinic.sfg.services.map;
 
 import com.learning.pet.clinic.sfg.model.Vet;
-import com.learning.pet.clinic.sfg.services.CrudService;
+import com.learning.pet.clinic.sfg.services.VetService;
 
 import java.util.Set;
 
 /**
  * aditya created on 18/08/20
  */
-public class VetServiceMap extends AbstractMapService<Vet, Long> implements CrudService<Vet, Long> {
+public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService {
     @Override
     public Vet save(Vet object) {
         return super.save(object.getId(), object);
