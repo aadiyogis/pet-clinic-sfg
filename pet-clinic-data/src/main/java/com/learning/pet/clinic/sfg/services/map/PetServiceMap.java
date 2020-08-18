@@ -2,12 +2,14 @@ package com.learning.pet.clinic.sfg.services.map;
 
 import com.learning.pet.clinic.sfg.model.Pet;
 import com.learning.pet.clinic.sfg.services.PetService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
 /**
  * aditya created on 18/08/20
  */
+@Service
 public class PetServiceMap extends AbstractMapService<Pet, Long> implements PetService {
     @Override
     public Pet save(Pet object) {
